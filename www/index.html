@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Blog App</title>
+</head>
+<body>
+    <div class="app">
+        <h1>Welcome to the Blog App</h1>
+
+        <!-- Device Ready Section -->
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+
+        <!-- Authentication Section -->
+        <div id="auth-section">
+            <h2>Authentication</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="signup-button">Sign Up</button>
+            <button id="signin-button">Sign In</button>
+            <button id="signout-button" onclick="signOut()">Sign Out</button>
+        </div>
+
+        <!-- Post Creation Section -->
+        <div id="post-section">
+            <h2>Create a Post</h2>
+            <input type="text" id="post-title" placeholder="Post Title">
+            <textarea id="post-content" placeholder="Post Content"></textarea>
+            <button id="create-post-button">Create Post</button>
+        </div>
+
+        <!-- Loading Sinner -->
+        <div id="loading-spinner" style="display:none;">
+            <img src="loading.gif" alt="Loading...">
+        </div>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+</html>
